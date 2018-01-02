@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Effective JavaScript: Frogger</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="info-control" class="col-md-1 container">
+        <table class="table table-bordered table-responsive">
+            <tr id="score"></tr>
+            <tr id="difficulty">
+                <td>Difficulty</td>
+                <td>
+                    <select id="select-difficulty">
+                        <option value="normal">Normal</option>
+                        <option value="easy">Easy</option>
+                        <option value="hard">Hard</option>
+                        <option value="insane">Insane</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="character"></tr>
+            <tr>
+                <td>Chose a Character</td>
+                <td>
+                    <select id="select-character">
+                        <option value="boy">Boy</option>
+                        <option value="cat-girl">Cat Girl</option>
+                        <option value="horn-girl">Horn Girl</option>
+                        <option value="pink-girl">Pink Girl</option>
+                        <option value="princess-girl">Princess Girl</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <script href="http://getbootstrap.com.br/customize/?id=ba7193891a10eab334d6827a9e69bbc4"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/resources.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/engine.js"></script>
+    </body>
 </html>
